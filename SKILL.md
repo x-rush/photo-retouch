@@ -69,4 +69,4 @@ your typical scenes; consider a pre-approved two-round split (scene surgery / ae
 
 ## Companion
 
-Execution engine: **[image-forge](https://github.com/<you>/image-forge)** — multi-provider (fal.ai / Replicate) generation CLI with model registry, budget controls, and SSIM tooling. Any equivalent editing backend works.
+Execution engine: **[image-forge](https://github.com/x-rush/image-forge)** — multi-provider (fal.ai / Replicate) generation CLI with model registry, budget controls, and SSIM tooling. Any equivalent editing backend works.

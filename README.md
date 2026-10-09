@@ -15,7 +15,7 @@ Professional portrait-retouching methodology pack for AI coding agents (SKILL.md
 ## Requirements
 
 - Session model with **native vision** (the analysis step is invalid via relay description tools)
-- An image-editing backend — pairs with **[image-forge](https://github.com/<you>/image-forge)** (multi-provider generation CLI); any instruction-editing capability works
+- An image-editing backend — pairs with **[image-forge](https://github.com/x-rush/image-forge)** (multi-provider generation CLI); any instruction-editing capability works
 
 ## Cost profile
 
