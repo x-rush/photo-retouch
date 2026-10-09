@@ -42,7 +42,19 @@ Scan region-by-region, produce: bystanders **counted** (check reflections & dist
 Principle: sophistication = harmony; subtraction removes *attention-grabbing* elements, not *existing* ones.
 
 ### Step 2 · Compose the final prompt (self-check after assembly)
-Five blocks in order: 【removal list】itemized hard verbs → 【completion plan】per removal → 【color design】pictorial description → 【portrait retouch】skin (with face-neck-hand continuity) + enumerated flaws + texture preservation → 【invariants】identity anchors + aspect/composition + "a single complete photograph, no text or watermark". Self-check: does the removal list cover every worksheet item? Are judged-keep elements in the protection list?
+Assemble in Google's six-element order (subject → composition → action/pose → location → style → editing instructions), merged into **five mandatory blocks**:
+
+```
+【removal list】 itemized, hard verbs ("delete / remove all")
+【completion plan】 per removal — what fills the space
+【color design】 pictorial description (what to push/pull, warm-cool relation, airiness) — not "fix colors"
+【portrait retouch】 enumerated flaws (nasolabial folds / acne / acne marks / dark circles / redness / stray hairs / oil shine — name each with its action: remove, lighten, clean up) + region-level touches (eye brightness & catchlights, lip tone evenness, hair-edge cleanup against background) + skin-tone continuity (face = neck = hands) + texture preservation (pores stay, no plastic smoothing)
+【invariants】 identity anchors + aspect/composition + "a single complete photograph, no text or watermark"
+```
+
+Self-check: removal list covers every worksheet item? Judged-keep elements in the protection list? Every present flaw named individually?
+
+**Capability boundary (tell the user upfront)**: generative editing cannot do professional-grade frequency-separation skin work, dodge & burn light sculpting, or per-eye retouching (catchlight shaping, sclera cleanup). State what's out of scope when accepting the job — do not promise retoucher-level results.
 
 ### Step 3 · Generate once
 Run your editing capability with the final prompt. **Run it once.** Then go straight to Step 4.
