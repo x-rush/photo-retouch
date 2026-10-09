@@ -7,9 +7,11 @@ description: Professional portrait retouching methodology for AI image-editing w
 
 A discipline pack for retouching people-photos (travel, street, studio, ethnic-style
 portraits) where **identity preservation is non-negotiable** and **cost is counted per
-generation**. Core contract with the user: **one shot per photo** — read everything up
-front, compose one final prompt, generate once, then return the result with findings and
-suggestions. Never auto-regenerate; no rework without the user seeing the image first.
+generation**. Core contract with the user: **correction work = one shot per photo** —
+read everything up front, compose one final prompt, generate once, then return the result
+with findings and suggestions. Re-imagination (pose/angle/expression) and expansion
+(outpaint) are conversational/iterative by nature — see Three Edit Classes. Never
+auto-regenerate; no rework without the user seeing the image first.
 
 **Execution**: this skill defines WHAT to do; perform edits through your environment's
 image-editing capability (e.g. an image-forge-type skill; recommended model class:
@@ -34,7 +36,7 @@ change with identity preservation). Rules:
 4. Expect SSIM 0.3-0.6 (structure legitimately changed) — verify by **anchor checklist only**, not SSIM.
 5. Disclose to user: output is a re-imagined photo of the same person, not the original photograph.
 
-### Class C · Expansion (outpaint / uncrop)
+### Class C · Expansion (outpaint / uncrop / 扩图 / 扩展画布)
 1. Prompt = continuation spec: era, light direction, perspective lines, what the new area shows.
 2. Original image area must stay pixel-identical (state it: "existing photo content unchanged, extend the canvas toward X").
 3. Verify: new region's light direction & grain match the original; horizon/perspective lines continue smoothly.
@@ -86,8 +88,10 @@ Self-check: removal list covers every worksheet item? Judged-keep elements in th
 
 **Capability boundary (tell the user upfront)**: generative editing cannot do professional-grade frequency-separation skin work, dodge & burn light sculpting, or per-eye retouching (catchlight shaping, sclera cleanup). State what's out of scope when accepting the job — do not promise retoucher-level results.
 
-### Step 3 · Generate once
-Run your editing capability with the final prompt. **Run it once.** Then go straight to Step 4.
+### Step 3 · Generate (pace by class)
+**Class A**: run the final prompt **once**, then go straight to Step 4.
+**Class B**: one transformation per generation; show each result before the next turn; stop when the user is satisfied.
+**Class C**: one expansion per generation (canvas direction × 1); verify continuity before any second expansion.
 
 ### Step 4 · Re-read, verify anchors, return with the image
 **Display the final image inline first** (a file path is not a delivery), then:
@@ -106,7 +110,7 @@ your typical scenes; consider a pre-approved two-round split (scene surgery / ae
 - Relay-tool vision reported "single person" while two bystanders and a market stall leaked → prompt never mentioned them → self-referential acceptance passed everything. (⇒ rules 1, 6)
 - "Forbidden: split-screen comparison" phrasing produced a split-panel; "simplify background" executed as light blur. (⇒ rule 2)
 - ffprobe width/height ignored EXIF rotation — a portrait was treated as landscape and the model wrongly blamed. (⇒ Step 1)
-- Four-round auto-pipeline cost 4× and stripped atmospheric props the user preferred. (⇒ single-shot + four tests)
+- Four-round auto-pipeline cost 4× and stripped atmospheric props the user preferred. (⇒ Class A single-shot + four tests; pacing differs by class)
 - "Soften facial flaws" left nasolabial folds and acne untouched — flaws must be enumerated with explicit actions. (⇒ Step 2)
 
 ## Companion
