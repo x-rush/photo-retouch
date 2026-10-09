@@ -1,6 +1,6 @@
 ---
 name: photo-retouch
-description: Professional portrait retouching methodology for AI image-editing workflows — exhaustive pre-flight analysis, single-shot generation discipline, identity-anchor verification, and aesthetic element judgment. Use when the user asks to 精修, retouch, 修图, beautify, or clean up portrait/photo/headshot/写真/客片 images (people photos with identity to preserve) — NOT for product shots, illustrations, or background-only edits. Works with any image-editing capability (e.g. the image-forge skill); costs ≈$0.08 per image plus optional user-approved rework rounds.
+description: Professional portrait retouching methodology for AI image-editing workflows — exhaustive pre-flight analysis, single-shot generation discipline, identity-anchor verification, and aesthetic element judgment. Use when the user asks to 精修, retouch, 修图, beautify, or clean up portrait/photo/headshot/写真/客片 images (people photos with identity to preserve) — NOT for product shots, illustrations, or background-only edits. Works with any image-editing capability (e.g. the image-forge skill); costs per generation depend on your backend (image-forge fal/nb21 tier: ≈$0.08/img) plus optional user-approved rework rounds.
 ---
 
 # photo-retouch — Portrait Retouching Methodology
